@@ -2,6 +2,23 @@ from flask import Flask, request, render_template
 import os
 import redis
 import socket
+import unittest
+import requests
+
+
+class TestVote(unittest.TestCase):
+    def get_vote(self):
+        expected = 200
+        response = requests.get('http://localhost:8080')
+        actual = response.status_code
+        self.assertEqual(actual, expected)
+
+    def add_vote(self):
+        expected = 200
+        response = requests.post('http://localhost:8080', {'vote': 'Cats'})
+        actual = response.status_code
+        self.assertEqual(actual, expected)
+
 
 app = Flask(__name__)
 
