@@ -52,8 +52,9 @@ jobs:
       - name: Launch compose file
         run: |
           docker-compose up -d
+          if [[ $(curl -s -XGET http://localhost:8080/ | grep results | awk '{print $5}') -eq 0 ]]; then echo OK ; else echo KO; fi
           curl -XGET http://localhost:8080/ 
-          curl -XPOST http://localhost:8080/ -d '{ vote = 1 }'
+          curl -XPOST 'http://localhost:8080/' -d 'vote=Cats'
           docker-compose down
 
 
