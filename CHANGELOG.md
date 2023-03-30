@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/nomaddevops/simplon-voting-app/compare/v1.0.1...v1.1.0) (2023-03-30)
+
+
+### Features
+
+* pre configure helm chart ([9c87dd9](https://github.com/nomaddevops/simplon-voting-app/commit/9c87dd932ead601a5744a000e44ba6c70d6470c7))
+
 ### [1.0.1](https://github.com/nomaddevops/simplon-voting-app/compare/v1.0.0...v1.0.1) (2023-03-29)
 
 
