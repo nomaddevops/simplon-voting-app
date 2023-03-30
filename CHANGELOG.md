@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/nomaddevops/simplon-voting-app/compare/v1.1.1...v1.2.0) (2023-03-30)
+
+
+### Features
+
+* force version ([0e0acf6](https://github.com/nomaddevops/simplon-voting-app/commit/0e0acf628dd492d42b93872b014d004f28c41363))
+
 ### [1.1.1](https://github.com/nomaddevops/simplon-voting-app/compare/v1.1.0...v1.1.1) (2023-03-30)
 
 
