@@ -11,7 +11,7 @@ image:
   tag: "latest"
 
 imagePullSecrets: []
-nameOverride: ""
+nameOverride: "vote-app-canary"
 fullnameOverride: ""
 
 serviceAccount:
@@ -42,12 +42,10 @@ service:
 
 ingress:
   enabled: true
-  className: "nginx"
   annotations:
-    #kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
     nginx.ingress.kubernetes.io/canary: "true"
-    nginx.ingress.kubernetes.io/canary-weight: "50"
+    nginx.ingress.kubernetes.io/canary-weight: "5"
   hosts:
     - host: vote-app.nomadevops.co
       paths:
