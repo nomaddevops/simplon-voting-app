@@ -42,6 +42,7 @@ else:
 
 # Redis configurations
 redis_server = os.environ['REDIS']
+version = app.config['version']
 
 # Redis Connection
 try:
@@ -81,6 +82,7 @@ def index():
                                value2=int(vote2),
                                button1=button1,
                                button2=button2,
+                               version=version,
                                title=title)
 
     elif request.method == 'POST':
