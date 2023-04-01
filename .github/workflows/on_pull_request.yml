@@ -29,8 +29,8 @@ jobs:
       - name: Launch compose file
         run: |
           docker-compose up -d
-          if [[ $(curl -s -XGET http://localhost:8080/ | grep results | awk '{print $5}') -eq 0 ]]; then echo OK GET; else echo KO; fi
-          if [[ $(curl -s -XPOST http://localhost:8080/ -d 'vote=Cats' | grep results | awk '{print $5}') -eq 1 ]]; then echo OK POST; else echo KO; fi
+          if [[ $(curl -s -XGET http://localhost:8080/ | grep results | awk '{print $5}') -eq 0 ]]; then echo OK GET; else echo KO exit 255; fi
+          if [[ $(curl -s -XPOST http://localhost:8080/ -d 'vote=Cats' | grep results | awk '{print $5}') -eq 1 ]]; then echo OK POST; else echo KO exit 255; fi
           docker-compose down
 
 

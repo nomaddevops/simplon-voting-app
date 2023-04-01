@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0](https://github.com/nomaddevops/simplon-voting-app/compare/v1.3.0...v1.4.0) (2023-03-30)
+
+
+### Features
+
+* yolo ([2fb705c](https://github.com/nomaddevops/simplon-voting-app/commit/2fb705c7c0a645951524fbac1ad98dfab0099a84))
+
 ## [1.3.0](https://github.com/nomaddevops/simplon-voting-app/compare/v1.2.0...v1.3.0) (2023-03-30)
 
 
